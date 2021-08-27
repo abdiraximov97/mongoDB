@@ -1,15 +1,28 @@
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>sayt.uz</title>
-</head>
-<body>
+<%- include("parts/header") %> 
     
-<h1>assalomu alaykum</h1>
+<div class="container vh-100 d-flex justify-content-center align-items-center">
+    <div class="col-md-10 mx-auto col-lg-5">
+        <form class="p-4 p-md-5 border rounded-3 bg-light">
+            <div class="form-floating mb-3">
+                <input id="floatingInput" class="form-control" autocomplete="off" type="email" placeholder="name@example.com">
+                <label for="floatingInput">Email address</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                <label for="floatingPassword">Password</label>
+            </div>
+            <div class="checkbox mb-3">
+                <label>
+                    <input type="checkbox" value="remember-me"> Remember me
+                </label>
+                <a href="/signup">Ro'yxatdan o'tish</a>
+            </div>
+            <button class="w-100 btn btn-lg btn-primary" type="submit">Sign up</button>
+            <hr class="my-4">
+        </form>
+    </div>
+</div>
 
-</body>
-</html>
+<%- include("parts/footer") %> 
+    
